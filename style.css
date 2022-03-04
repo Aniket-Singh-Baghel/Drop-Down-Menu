@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/279547.jpg);
+    background-size: cover;
+    background-position: center;
+    font: 500 15px 'poppins';
+}
+nav{
+    background-color: #888888;
+    text-align: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    /* color: #fff; */
+}
+nav ul li{
+    width: 120px;
+    margin:15px;
+    padding:15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, nav ul li:hover{
+    background-color: #baeb33;
+    border-radius: 3px;
+}
+nav i{
+    margin-right: 8px;
+}
+.Sub-menu-1{
+    display: none;
+}
+nav ul li:hover .Sub-menu-1{
+    display: block;
+    position: absolute;
+   background-color: #888888;
+   margin: 25px -15px;
+   border-radius: 5px;
+}
+nav ul li:hover .Sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .Sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    text-align: center;
+}
+nav ul li:hover .Sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.fa-angle-right{
+    float: right;
+    margin: 5px 0;
+    color: #fff;
+}
+.Sub-menu-2{
+    display: none;
+}
+.hover-me:hover .Sub-menu-2{
+    display: block;
+    position: absolute;
+    margin: -40px 165px;
+    background-color: #888888;
+}
